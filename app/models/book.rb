@@ -1,6 +1,7 @@
 class Book < ActiveRecord::Base
   extend FriendlyId
   friendly_id :name, use: :slugged
+  has_many :sales
 
   belongs_to :user
   has_attached_file :image
