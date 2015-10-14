@@ -20,7 +20,7 @@
     src="https://checkout.stripe.com/checkout.js" class="stripe-button"
     data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
     data-amount="<%= @book.price %>"
-    data-name="eStuk"
+    data-name="book-me"
     data-description="<%= @book.name %>"
     data-email="<%= current_user.email %>">
   </script>
